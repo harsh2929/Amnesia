@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "rootDirs": ["src", "tests"],
+    "locationss": {
+      "@/config/*": ["src/config/*"],
+      "@/components/*": ["src/components/*"],
+      "@/services/*": ["src/services/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/feed/*": ["src/feed/*"],
+      "@/redux/*": ["src/redux/*"],
+      "@/hkc/*": ["src/hkc/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/tests/*": ["tests/*"]
+    },
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "src/**/*", "tests/**/*"],
+  "exclude": ["node_modules"]
+}

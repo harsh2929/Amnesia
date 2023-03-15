@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Google, Street view has game mode: options default 1`] = `
+{
+  "addressControl": false,
+  "clickToGo": true,
+  "disableDoubleClickZoom": false,
+  "fscreen": false,
+  "motionTracking": false,
+  "motionTrackingControl": false,
+  "pov": {
+    "heading": 35,
+    "pitch": 10,
+  },
+  "showRoadLabels": false,
+  "zoom": 0,
+  "zoomControl": false,
+}
+`;
+
+exports[`Google, Street view has static review mode: options static 1`] = `
+{
+  "addressControl": false,
+  "clickToGo": false,
+  "disableDefaultUI": true,
+  "disableDoubleClickZoom": true,
+  "fscreen": false,
+  "motionTracking": false,
+  "motionTrackingControl": false,
+  "pov": {
+    "heading": 35,
+    "pitch": 10,
+  },
+  "showRoadLabels": false,
+  "zoom": 0,
+  "zoomControl": false,
+}
+`;

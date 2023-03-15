@@ -1,0 +1,40 @@
+{
+  "ignorePatterns": ["scripts/**"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "plugins": ["testing-library"],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"],
+      "rules": {
+        "@typescript-eslint/no-empty-function": "off"
+      }
+    }
+  ],
+  "rules": {
+    "no-console": ["error", {"allow": ["info", "warn", "error"]}],
+    "no-constant-condition": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "locationss": [
+          {
+            "name": "@mui/icons-material",
+            "message": "Forbidden top-level import. Use locationss imports for MUI icons: import MyIcon from '@mui/icons-material/MyIcon'"
+          }
+        ]
+      }
+    ],
+    "react-hkc/exhaustive-deps": "error",
+    "require-await": "error",
+    "@typescript-eslint/no-var-requires": "off"
+  }
+}
